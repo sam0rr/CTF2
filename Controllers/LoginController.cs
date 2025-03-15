@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using CTFomni.Models;
 using Microsoft.AspNetCore.Mvc;
 
