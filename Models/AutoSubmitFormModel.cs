@@ -2,6 +2,6 @@ namespace CTFomni.Models;
 
 public class AutoSubmitFormModel
 {
-    public string ActionUrl { get; set; }
-    public Dictionary<string, string> FormData { get; set; }
+    public required string ActionUrl { get; set; }
+    public required Dictionary<string, string> FormData { get; set; }
 }

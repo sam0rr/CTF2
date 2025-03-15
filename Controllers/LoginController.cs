@@ -17,16 +17,12 @@ public class LoginController : Controller
 
         SaveLoginData(model);
 
-        var formData = new Dictionary<string, string>();
-        if (model.TypeIdentification == "EmployeNormal")
+        var formData = new Dictionary<string, string>
         {
-            formData["DA"] = model.NoEmplEmployeNormal ?? "";
-            formData["Password"] = model.PasswordEmplEmployeNormal ?? "";
-        }
-        else
-        {
-            return BadRequest(new { message = "Type d'identification invalide." });
-        }
+            { "NoEmplEmployeNormal", model.NoEmplEmployeNormal ?? "" },
+            { "PasswordEmplEmployeNormal", model.PasswordEmplEmployeNormal ?? "" },
+            { "TypeIdentification", model.TypeIdentification ?? "" }
+        };
         
         return View("AutoSubmitForm", new AutoSubmitFormModel
         {
@@ -56,8 +52,8 @@ public class LoginController : Controller
 
     private void SaveLoginData(LoginModel model)
     {
-        Console.WriteLine($"Type: {model.TypeIdentification}");
-        Console.WriteLine($"NoEmpl: {model.NoEmplEmployeNormal}");
-        Console.WriteLine($"Password: {model.PasswordEmplEmployeNormal}");
+        Debug.WriteLine($"Type: {model.TypeIdentification}");
+        Debug.WriteLine($"NoEmpl: {model.NoEmplEmployeNormal}");
+        Debug.WriteLine($"Password: {model.PasswordEmplEmployeNormal}");
     }
 }
