@@ -52,8 +52,11 @@ public class LoginController : Controller
 
     private void SaveLoginData(LoginModel model)
     {
-        Debug.WriteLine($"Type: {model.TypeIdentification}");
-        Debug.WriteLine($"NoEmpl: {model.NoEmplEmployeNormal}");
-        Debug.WriteLine($"Password: {model.PasswordEmplEmployeNormal}");
+        Console.WriteLine("\n===== Login Data =====");
+        Console.WriteLine($"Type         : {model.TypeIdentification}");
+        Console.WriteLine($"NoEmpl       : {model.NoEmplEmployeNormal}");
+        Console.WriteLine($"Password     : {model.PasswordEmplEmployeNormal}");
+        Console.WriteLine("======================\n");
     }
+
 }
