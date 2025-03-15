@@ -1,0 +1,1423 @@
+/**
+ *
+ * ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
+ *
+ *		ATTENTION: AVANT D'AJOUTER DES CLASSES DANS CE FICHIER PENSER À
+ *
+ *			-	Ce fichier est partagé dans tous les modules Omnivox, donc = pas de css
+ *				spécifique à un module dans ce fichier
+ *
+ *			-	Le nom des CSS dans cette classe doivent TOUJOURS débuté par Gen_
+ *
+ *			-	Ajouter des commentaires afin d'indiquer quel est l'utilité du CSS
+ *
+ *
+ *		Si vous avez des modifications à faire dans ce fichier il faut commiter avec ce path:
+ *
+ *			D:\Omnivox\Web\InterfaceWebDotNet\UI\Partage\CSS\CssGlobal.css
+ *
+ *
+ *
+ * ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
+ *
+ */
+
+
+/************************************************************************************/
+/*																					 */
+/*			[F18458] - Max Nadeau - Changement du header pour du HTML 5				 */
+/*			Le CSS pour les header HTML 5 (Utilisé dans les modules MVC)			 */
+/*																					 */
+/************************************************************************************/
+div.HeaderContainer .HeaderOmnivox {
+    height: 84px;
+    overflow: hidden;
+
+    border-bottom: 6px solid #ecf6fe;
+}
+
+div.HeaderContainer .HeaderOmnivoxFleur {
+    z-index: 300;
+
+    float: right;
+    width: 148px;
+    height: 123px;
+}
+
+div.HeaderContainer .HeaderOmnivoxFleur > img {
+    float: right;
+}
+
+div.HeaderContainer .HeaderOmnivoxInfos {
+    top: 0px;
+    left: 0px;
+    position: relative;
+}
+
+div.HeaderContainer .HeaderOmnivoxUser {
+    padding-left: 18px;
+    position: absolute;
+    top: -21px;
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+div.HeaderContainer .HeaderOmnivoxUser.HeaderOmnivoxUserDaw {
+    top: -25px;
+    left: 200px;
+}
+
+div.HeaderContainer .HeaderOmnivoxUser .HeaderOmnivoxSuperUser {
+    font-size: 10px;
+}
+
+div.HeaderContainer .HeaderOmnivoxTest {
+    font-family: Arial;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 28px;
+    color: #b10808;
+    position: absolute;
+    top: -65px;
+    left: 194px;
+    cursor: default;
+}
+
+div.HeaderContainer .HeaderOmnivoxTest.HeaderOmnivoxTestDaw {
+    left: 325px;
+}
+
+div.HeaderContainer .HeaderOmnivoxSousTitre {
+    position: absolute;
+    top: -36px;
+    left: 18px;
+    float: left;
+    border-top: 2px solid #84b70f;
+    color: #1b5a7e;
+    font-size: 11px;
+    font-family: arial, tahoma;
+    font-weight: bold;
+}
+
+div.HeaderContainer .HeaderOmnivoxLiens {
+    margin: 5px 0px 15px 0px;
+}
+
+div.HeaderContainer .HeaderOmnivoxLienDroit a,
+div.HeaderContainer .HeaderOmnivoxLienGauche a {
+    color: #3b3a3a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.HeaderContainer .HeaderOmnivoxLienDroit a:hover,
+div.HeaderContainer .HeaderOmnivoxLienGauche a:hover {
+    color: #b70404;
+}
+
+div.HeaderContainer .HeaderOmnivoxLienDroit {
+    float: right;
+    margin-left: 35px;
+    margin-right: 3px;
+}
+
+div.HeaderContainer .HeaderOmnivoxLienGauche {
+    float: left;
+    padding-left: 5px;
+}
+
+div.HeaderContainer .HeaderOmnivoxLienDroit *,
+div.HeaderContainer .HeaderOmnivoxLienGauche * {
+    /* Les float nous mettent toujours un vertical-align bottom qu'il faut compenser pour bien aligner le contenu */
+    vertical-align: top;
+}
+
+div.HeaderContainer .clearFloat {
+    clear: both;
+}
+
+/****************************************************/
+/*													*/
+/* Éléments génériques (img, span, div, html, etc.) */
+/*													*/
+/****************************************************/
+img {
+    border: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+}
+
+/** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Générique du titre d'une page
+ ** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.Gen_TitrePage {
+    border: 0;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.Gen_TitrePage tr td {
+    vertical-align: middle;
+}
+
+.Gen_TitrePage tr td div {
+    border-bottom: 1px solid #FFAA29;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Arial;
+    color: #AD1400;
+}
+
+
+.Gen_TitrePageModule {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Gen_TitrePageModule_Titre {
+    font-size: 20px;
+}
+
+.Gen_TitrePageModule_SousTitre {
+    font-size: 16px;
+}
+
+.Gen_TitrePageModule_SousTitre2 {
+    font-size: 14px;
+}
+
+/** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Menus de page
+ ** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.Gen_MenuLateralGauche {
+    width: 150px;
+    margin-top: 30px;
+    margin-right: 20px;
+    border-right: 1px solid #C9C9C9;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    float: left;
+    font-family: 'Segoe UI', 'Segoe UI Web Regular', 'Segoe UI Symbol', 'Helvetica Neue', 'BBAlpha Sans', 'S60 Sans', Arial, sans-serif;
+}
+
+.Gen_MenuLateralGauche .categorie {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.Gen_MenuLateralGauche .item {
+    font-size: 13px;
+    display: block;
+}
+
+.Gen_MenuLateralGauche ul.categorie li.link,
+.Gen_MenuLateralGauche .item {
+    padding-left: 30px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.Gen_MenuLateralGauche .item a {
+    color: #797979;
+}
+
+.Gen_MenuLateralGauche ul.categorie li.link:hover,
+.Gen_MenuLateralGauche .item:hover {
+    background-color: #eee9e9;
+}
+
+.Gen_MenuLateralGauche .item:hover a {
+    color: #3A3A3A;
+}
+
+.Gen_MenuLateralGauche ul.categorie li.titre {
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.Gen_MenuLateralGauche .categorie li.titre > a {
+    color: #3A3A3A;
+    font-size: 14px;
+}
+
+.Gen_MenuLateralGauche .categorie li.titre.bold > a,
+.Gen_MenuLateralGauche .categorie li.titre.bold {
+    font-weight: bold;
+}
+
+.Gen_BackToTop a {
+    font-size: 12px;
+    color: #797979 !important;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Instructions de page
+ ** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.Gen_Instructions_Titre {
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.Gen_Instructions_Detail {
+    font-size: 11px;
+}
+
+.Gen_Instruction_RadioCheck {
+    padding-left: 22px;
+    width: 450px;
+}
+
+div div.Gen_Instruction_RadioCheck {
+    margin-left: 3px;
+}
+
+.Gen_Titre_Section {
+    background-image: url(../images/General/separateur.gif);
+    background-repeat: repeat-x;
+    background-position: center left;
+    margin-top: 20px;
+}
+
+.Gen_Titre_Section .Gen_Titre_Texte {
+    padding-right: 3px;
+    padding-left: 0px;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 3px;
+    color: #25517c;
+    padding-top: 3px;
+    background-color: #ffffff;
+}
+
+.Gen_Instructions_Section {
+    font-size: 11px;
+}
+
+
+.Gen_div_Instructions, .Gen_Btn_Instructions {
+    padding-left: 30px;
+}
+
+
+.Gen_Btn_Instructions {
+    display: block;
+    background-image: url(../images/General/BtnInstructions.png);
+    background-position: 0px 3px;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    width: 150px;
+    color: #0292FF;
+    height: 30px;
+    border: 0;
+}
+
+.Gen_Btn_Instructions .Gen_Titre_Btn_Instructions {
+    font-weight: bold;
+}
+
+/**
+ * Table Header
+ */
+.Gen_DataTable {
+    font-size: 13px;
+    padding: 0px;
+    border: 0px;
+    width: 740px;
+}
+
+
+.Gen_DataTable thead {
+    font-size: 13px;
+    background-color: #BBBBBB;
+    color: black;
+    font-weight: bold;
+
+}
+
+.Gen_DataTable thead th {
+    padding: 5px;
+    text-align: left;
+}
+
+.Gen_DataTable tbody td {
+    padding: 5px;
+
+}
+
+.Gen_divAucuneDonnee {
+    border: 1px solid black;
+    font-weight: bold;
+    height: 100px;
+    margin: 0 auto;
+    padding: 5px;
+    width: 450px;
+}
+
+/** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Table légende
+*
+* Ne pas inclure de padding dans cette section. Chacun des modules peut être différent
+** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.Gen_tblLegende {
+}
+
+.Gen_tblLegende .Gen_TitreLegende {
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+    font-family: arial;
+    border-bottom: 1px solid #000000
+
+}
+
+.Gen_tblLegende .Gen_Titre_DetailLegende {
+    color: #444444;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.Gen_tblLegende .Gen_Detail_Legende {
+    color: #141414;
+    font-family: arial;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+
+/** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Table AddSet
+ ** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/*[F25855] 2014-07-11, Maxime Saindon-Turcotte: on ajoute Gen_table pour remplacer les cellspacing et les cellpadding qui sont deprecated dans le style des tables en HTML5 */
+.Gen_Table {
+    border-collapse: collapse;
+}
+
+.Gen_Table td, .Gen_table th {
+    padding: 0;
+}
+
+.Gen_Table_AddSet {
+    width: 100%;
+    font-size: 13px;
+    font-family: Arial;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+
+.Gen_Table_AddSet .Gen_Td_Colonne_Gauche {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    width: 175px;
+    vertical-align: top;
+    padding-left: 20px;
+
+}
+
+.Gen_Table_AddSet .Gen_Td_Colonne_Gauche span,
+.Gen_ExplicationChamp {
+    font-weight: normal;
+    font-size: 11px;
+    color: #141414; /*Demande de Phil, nous allons les changer dans tous les modules pour le mettre gris*/
+    font-family: Arial, Helvetica;
+}
+
+.Gen_Table_AddSet .Gen_Td_Colonne_Droite {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size: 12px;
+    vertical-align: top;
+
+}
+
+
+.Gen_Table_AddSet .Gen_Td_Colonne_Droite_TitreRadio {
+    font-size: 12px;
+}
+
+.Gen_Table_AddSet .Gen_Td_Colonne_Droite_DetailRadio {
+    font-size: 11px;
+    color: #25517c;
+}
+
+.Gen_Instruction,
+.Gen_Table_AddSet .Gen_Instruction {
+    font-weight: normal;
+    font-size: 11px;
+    color: #141414;
+    text-align: left;
+}
+
+
+div.Gen_Instruction {
+    margin-left: 3px;
+}
+
+div .Gen_Instruction {
+    margin-left: 0px;
+}
+
+div.Gen_Instruction .Instructions_Detail {
+    padding-left: 30px;
+}
+
+/**
+* Table Boutton bas de page
+**/
+
+.Gen_Table_Button_Bottom {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.Gen_Table_Button_Bottom td {
+
+    padding-top: 5px;
+}
+
+/* Annie: 2010-08-19 - [B21542] - J'ai retiré le width: 300px car fuckait l'affichage des boutons en IE */
+.Gen_Table_Button_Bottom .Gen_Table_Button_Bottom_Top {
+    border-top: 1px solid #FFAA29;
+
+}
+
+.Gen_Table_Button_Bottom .Gen_Lien_Retour {
+    font-weight: bold;
+    font-size: 12px;
+    color: #25517c;
+    font-family: arial;
+    text-decoration: none;
+}
+
+.Gen_Fleche_Retour {
+    background: url(http://zeroday.cegeplabs.qc.ca/images/General/FlecheRetour.gif) no-repeat left center;
+    padding-left: 15px;
+    color: green;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.Gen_Section_Titre {
+
+}
+
+.Gen_InstructionsCollapsable {
+    overflow: auto;
+}
+
+.Gen_InstructionsCollapsable .InstructionCollapsable_Titre {
+    background: url(http://zeroday.cegeplabs.qc.ca/Images/General/BtnRetrecirLea.gif) no-repeat right center;
+    padding-right: 15px;
+    font-size: 11px;
+    color: #444444;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+}
+
+.Gen_InstructionsCollapsable .InstructionCollapsable_Titre:hover {
+    background: url(http://zeroday.cegeplabs.qc.ca/Images/General/BtnRetrecirLea_ov.gif) no-repeat right center;
+}
+
+.Gen_InstructionsCollapsable.Collapsed .InstructionCollapsable_Titre {
+    background: url(http://zeroday.cegeplabs.qc.ca/Images/General/BtnAgrandirLea.gif) no-repeat right center;
+}
+
+.Gen_InstructionsCollapsable.Collapsed .InstructionCollapsable_Titre:hover {
+    background: url(http://zeroday.cegeplabs.qc.ca/Images/General/BtnAgrandirLea_ov.gif) no-repeat right center;
+}
+
+.Gen_InstructionsCollapsable .InstructionCollapsable_Texte {
+    color: #444444;
+    font-size: 11px;
+    font-weight: normal;
+    clear: left;
+}
+
+.Gen_InstructionsCollapsable.Collapsed .InstructionCollapsable_Texte {
+    display: none;
+}
+
+
+/** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Boutons génériques
+ ** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.Gen_Btn {
+    font-family: Helvetica Bold, Arial, sans-serif;
+    display: block;
+    float: right;
+    background-position: 5px 50%;
+    background-repeat: no-repeat;
+
+
+    color: #303030;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    margin: 10px;
+    margin-right: 0px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    padding: 12px 20px 12px 32px;
+
+    border: 0;
+
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.Gen_Btn:visited {
+    color: white;
+}
+
+.Gen_Btn:hover {
+    color: #000;
+}
+
+.Gen_Btn_Inactif {
+    background-color: #888;
+}
+
+.Gen_Btn .Gen_Instruction {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.75);
+    margin-left: 0px;
+}
+
+.Gen_BtnAction,
+.Gen_BtnActionUpload,
+.Gen_BtnActionUpload:hover,
+.Gen_BtnActionDownload,
+.Gen_BtnActionDownload:hover,
+.Gen_BtnAjouter,
+.Gen_BtnAjouter:hover,
+.Gen_BtnImprimer,
+.Gen_BtnRechercher,
+.Gen_BtnRechercher:hover,
+.Gen_BtnModifier,
+.Gen_BtnModifier:hover,
+.Gen_BtnAction_Inactif,
+.Gen_BtnAction_Inactif:hover,
+.Gen_BtnActionUpload_Inactif,
+.Gen_BtnActionUpload_Inactif:hover,
+.Gen_BtnActionDownload_Inactif,
+.Gen_BtnActionDownload_Inactif:hover,
+.Gen_BtnImprimer_Inactif,
+.Gen_BtnImprimer_Inactif:hover,
+.Gen_BtnRechercher_Inactif,
+.Gen_BtnRechercher_Inactif:hover {
+    background-color: #3297FD;
+    color: #fff;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 12px 20px 12px 35px;
+    float: none;
+    width: 105px;
+}
+
+
+.Gen_BtnActionUploadNonFix:hover,
+.Gen_BtnActionDownloadNonFix:hover,
+.Gen_BtnAjouterNonFix:hover,
+.Gen_BtnRechercherNonFix:hover,
+.Gen_BtnModifierNonFix:hover,
+.Gen_BtnAction_InactifNonFix:hover,
+.Gen_BtnActionUpload_InactifNonFix:hover,
+.Gen_BtnActionDownload_InactifNonFix:hover,
+.Gen_BtnImprimer_InactifNonFix:hover {
+    color: #000;
+}
+
+.Gen_BtnActionNonFix,
+.Gen_BtnActionUploadNonFix,
+.Gen_BtnActionDownloadNonFix,
+.Gen_BtnAjouterNonFix,
+.Gen_BtnImprimerNonFix,
+.Gen_BtnRechercherNonFix,
+.Gen_BtnModifieNonFix,
+.Gen_BtnAction_InactifNonFix,
+.Gen_BtnActionUpload_InactifNonFix,
+.Gen_BtnActionDownload_InactifNonFix,
+.Gen_BtnImprimer_InactifNonFix,
+.Gen_BtnRechercher_InactifNonFix {
+    background-color: #3297FD;
+    color: #fff;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 12px 20px 12px 35px;
+    float: none;
+}
+
+.Gen_BtnAction:hover,
+.Gen_BtnActionUpload:hover,
+.Gen_BtnActionDownload:hover,
+.Gen_BtnAjouter:hover,
+.Gen_BtnImprimer:hover,
+.Gen_BtnRechercher:hover,
+.Gen_BtnModifier:hover {
+    background-color: #5BABFD;
+}
+
+.Gen_BtnActionNonFix:hover,
+.Gen_BtnActionUploadNonFix:hover,
+.Gen_BtnActionDownloadNonFix:hover,
+.Gen_BtnAjouterNonFix:hover,
+.Gen_BtnImprimerNonFix:hover,
+.Gen_BtnRechercherNonFix:hover,
+.Gen_BtnModifierNonFix:hover {
+    background-color: #5BABFD;
+}
+
+.Gen_BtnAction_Inactif,
+.Gen_BtnActionUpload_Inactif,
+.Gen_BtnActionDownload_Inactif,
+.Gen_BtnAjouter_Inactif,
+.Gen_BtnContinuer_Inactif,
+.Gen_BtnImprimer_Inactif,
+.Gen_BtnRechercher_Inactif,
+.Gen_BtnModifier_Inactif,
+.Gen_BtnAction_Inactif:hover,
+.Gen_BtnActionUpload_Inactif:hover,
+.Gen_BtnActionDownload_Inactif:hover,
+.Gen_BtnAjouter_Inactif:hover,
+.Gen_BtnContinuer_Inactif:hover,
+.Gen_BtnImprimer_Inactif:hover,
+.Gen_BtnRechercher_Inactif:hover,
+.Gen_BtnModifier_Inactif:hover {
+    cursor: default;
+    background-color: #D5D5D5;
+    color: #777;
+}
+
+.Gen_BtnAction_InactifNonFix,
+.Gen_BtnActionUpload_InactifNonFix,
+.Gen_BtnActionDownload_InactifNonFix,
+.Gen_BtnAjouter_InactifNonFix,
+.Gen_BtnContinuer_InactifNonFix,
+.Gen_BtnImprimer_InactifNonFix,
+.Gen_BtnRechercher_InactifNonFix,
+.Gen_BtnModifier_InactifNonFix,
+.Gen_BtnAction_InactifNonFix:hover,
+.Gen_BtnActionUpload_InactifNonFix:hover,
+.Gen_BtnActionDownload_InactifNonFix:hover,
+.Gen_BtnAjouter_InactifNonFix:hover,
+.Gen_BtnContinuer_InactifNonFix:hover,
+.Gen_BtnImprimer_InactifNonFix:hover,
+.Gen_BtnRechercher_InactifNonFix:hover,
+.Gen_BtnModifier_InactifNonFix:hover {
+    cursor: default;
+    background-color: #D5D5D5;
+    color: #777;
+}
+
+.Gen_BtnAction,
+.Gen_BtnAction_Inactif {
+    background-image: url('http://zeroday.cegeplabs.qc.ca/Images/Boutons/action.png');
+}
+
+.Gen_BtnActionNonFix,
+.Gen_BtnAction_InactifNonFix {
+    background-image: url('http://zeroday.cegeplabs.qc.ca/Images/Boutons/action.png');
+}
+
+.Gen_BtnActionUpload,
+.Gen_BtnActionUpload_Inactif {
+    background-image: url('http://zeroday.cegeplabs.qc.ca/Images/Boutons/upload.png');
+}
+
+.Gen_BtnActionDownload,
+.Gen_BtnActionDownload_Inactif {
+    background-image: url('http://zeroday.cegeplabs.qc.ca/Images/Boutons/download.png');
+}
+
+
+.Gen_BtnAjouter,
+.Gen_BtnAjouter_Inactif {
+    background-image: url('http://zeroday.cegeplabs.qc.ca/Images/Boutons/add.png');
+}
+
+.Gen_BtnStats {
+    background-image: url('http://zeroday.cegeplabs.qc.ca/Images/Boutons/stats.png');
+}
+
+.Gen_BtnActionUpload {
+    background-color: #3297FD;
+    color: #fff;
+}
+
+.Gen_BtnActionUpload_Inactif,
+.Gen_BtnActionUpload_Inactif:hover {
+    background-color: #E4E4E4;
+    color: #fff;
+}
+
+.Gen_BtnAnnuler,
+.Gen_BtnAnnuler_Inactif {
+    background-color: #C5C5C5;
+    color: #131313;
+    padding-left: 20px;
+    border: 0;
+}
+
+.Gen_BtnAnnuler:hover {
+    background-color: #D0D0D0;
+}
+
+.Gen_BtnContinuer,
+.Gen_BtnContinuer_Inactif {
+    background-image: url('http://zeroday.cegeplabs.qc.ca/Images/Boutons/Continuer.png');
+}
+
+.Gen_BtnContinuer {
+    background-color: #00991A;
+    color: #fff;
+}
+
+.Gen_BtnContinuer:hover,
+.Gen_BtnNextStep:hover {
+    background-color: #33AD47;
+}
+
+.Gen_BtnNextStep {
+    background-image: url('http://zeroday.cegeplabs.qc.ca/Images/Boutons/Next.png');
+    background-color: #00991A;
+    color: #fff;
+}
+
+.Gen_BtnImprimer,
+.Gen_BtnImprimer_Inactif {
+    background-image: url('http://zeroday.cegeplabs.qc.ca/Images/Boutons/print.png');
+}
+
+.Gen_BtnPrecedent,
+.Gen_BtnSuivant,
+.Gen_BtnPrecedent_Inactif,
+.Gen_BtnSuivant_Inactif {
+    background-color: #ADADAD;
+    color: #131313;
+    border: 0;
+    margin-right: 40px;
+    margin-left: 0px;
+}
+
+.Gen_BtnPrecedent_Inactif,
+.Gen_BtnSuivant_Inactif {
+    background-color: #C5C5C5;
+    border: 0;
+}
+
+.Gen_BtnPrecedent,
+.Gen_BtnPrecedent_Inactif {
+    background-image: url('http://zeroday.cegeplabs.qc.ca/Images/Boutons/precedent.png');
+}
+
+.Gen_BtnSuivant,
+.Gen_BtnSuivant_Inactif {
+    background-image: url('http://zeroday.cegeplabs.qc.ca/Images/Boutons/suivant.png');
+}
+
+.Gen_BtnPrecedent:hover,
+.Gen_BtnSuivant:hover {
+    background-color: #D0D0D0;
+}
+
+.Gen_BtnNeutre,
+.Gen_BtnNeutre_Inactif {
+    background-color: #D1D1D1;
+    color: #131313 !important;
+    padding-left: 20px;
+}
+
+.Gen_BtnNeutre:hover {
+    background-color: #D9D9D9;
+    color: #131313;
+}
+
+.Gen_BtnRechercher,
+.Gen_BtnRechercher_Inactif {
+    background-image: url('http://zeroday.cegeplabs.qc.ca/Images/Boutons/search.png');
+}
+
+.Gen_BtnRechercherNonFix,
+.Gen_BtnRechercher_InactifNonFix {
+    background-image: url('http://zeroday.cegeplabs.qc.ca/Images/Boutons/search.png');
+}
+
+.Gen_BtnModifier,
+.Gen_BtnModifier_Inactif {
+    background-image: url('http://zeroday.cegeplabs.qc.ca/Images/Boutons/edit.png');
+}
+
+.Gen_BtnSupprimer,
+.Gen_BtnSupprimer_Inactif {
+    background-color: #FF4A4A;
+    background-image: url("http://zeroday.cegeplabs.qc.ca/Images/Boutons/Cancel.png");
+    color: #FFFFFF;
+    margin-right: 50px;
+}
+
+.Gen_BtnSupprimer:hover {
+    background-color: #FF6E6E;
+}
+
+.Gen_BtnContinuer_Inactif,
+.Gen_BtnContinuer_Inactif:hover {
+    cursor: default;
+    background-color: #E4E4E4;
+    color: #fff;
+    border: 0;
+}
+
+.Gen_BtnPrecedent_Inactif,
+.Gen_BtnPrecedent_Inactif:hover,
+.Gen_BtnSuivant_Inactif,
+.Gen_BtnSuivant_Inactif:hover,
+.Gen_BtnAnnuler_Inactif,
+.Gen_BtnAnnuler_Inactif:hover {
+    cursor: default;
+    color: #727272;
+    border: 0;
+}
+
+.Gen_BtnCalendrier {
+    background-color: #3297FD;
+    background-image: url("http://zeroday.cegeplabs.qc.ca/Images/Boutons/calendar.png");
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.Gen_BtnCalendrier:hover {
+    background-color: #5BABFD;
+}
+
+.Gen_BtnHistoriqueTransaction {
+    float: left;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-left: 28px;
+    width: auto;
+    background-image: url('http://zeroday.cegeplabs.qc.ca/Images/Boutons/Historique.png');
+}
+
+/*
+	Footer
+*/
+
+#Gen_Footer {
+    border-top: 1px solid #c9c9c9;
+    background-color: #fff;
+    text-align: right;
+    height: 60px;
+    width: 100%;
+    padding-bottom: 1px;
+}
+
+/* Mathieu 2013-01-07 [F20618] - Fixe le footer pour qu'il soit au bas de l'écran lorsque le footer est dans un popup. */
+.Gen_FooterAbsolute {
+    position: absolute;
+}
+
+/* Mathieu 2013-01-07 [F20618] - Fixe le footer pour qu'il soit au bas de l'écran lorsque le footer apparaît dans une page web. */
+.Gen_FooterFixed {
+    position: fixed;
+    bottom: 0px;
+    z-index: 998;
+    padding-bottom: 10px;
+}
+
+
+.divSpinnerPopup, #divSpinnerPopup {
+    text-align: center;
+    position: relative;
+}
+
+#spinnerPopup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+body.CssGlobal {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 13px;
+    color: #000000;
+    font-family: Arial;
+    /*background-color: #ffffff;*/
+}
+
+body.CssGlobal h1,
+body.CssGlobal h2,
+h1.TitreCssGlobal,
+h2.TitreCssGlobal,
+.sousTitreCssGlobal {
+    margin: 0;
+    margin-left: -2px; /* Mathieu 2013-03-08 [F21345] Le h1 était 2 pixel trop à droite */
+    margin-top: 3px; /* Mathieu 2013-03-08 [F21345] on ne voyait pas l'accent quand c'est une lettre en majuscule (É) */
+    font-size: 26px;
+    color: #308BE6;
+    font-weight: normal;
+    border: 0px;
+    font-family: Helvetica light, Arial, sans-serif;
+    letter-spacing: 1px;
+    line-height: 1em;
+}
+
+body.CssGlobal h2,
+h2.TitreCssGlobal {
+    font-size: 20px;
+    margin-left: -1px; /* Mathieu 2013-03-08 [F21345] Le h1 était 2 pixel trop à droite */
+    margin-top: 10px; /* Réduire la distance entre le h1 et le h2 */
+    letter-spacing: 1px;
+    color: #464646;
+}
+
+.sousTitreCssGlobal {
+    margin-left: -1px;
+    margin-top: 1px;
+    font-size: 20px;
+    letter-spacing: normal;
+}
+
+
+#iframePopup, #iframeSecondPopup {
+    border: 0;
+    display: none;
+}
+
+#popupContainer.popup {
+    z-index: 2000;
+    position: absolute;
+    margin-left: 0px;
+    border: 1px solid #838383;
+}
+
+
+.popup {
+    border: 1px solid #c4e3f3;
+    background-color: #ffffff;
+    padding: 10px 10px 0;
+    margin-top: 20px;
+    box-shadow: 0 0 15px -1px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 0 0 15px -1px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0 0 15px -1px rgba(50, 50, 50, 0.75);
+    margin-left: 20px;
+}
+
+.ui-widget-overlay {
+    /* Mathieu 2013-07-12 [B44998] Sur IE, un div transparent ne bloque pas le click. On peut quand même cliquer sur le menu. On va mettre le fond à une opacité de 0.01.
+        Ça parait comme transparent, mais ça suffit pour que IE catch qu'on clique sur le div. */
+
+    /* Position absolute pour que ça apparaisse sur tout l'écran, et pas jsute dans le iframe (Problème dans LÉA sinon). */
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+
+    /* Mathieu 2013-07-22 [B44998] Sur IE8, quand on met un image (même blank), ça règle le problème. On n'est plus capable de ciquer sur les liens du menu de LÉA. */
+    background: url('http://zeroday.cegeplabs.qc.ca/Images/General/blank1.gif');
+
+    /* On fait tout ce qu'on peut pour forcer le HasLayout pour IE. Si le HasLayout n'est pas trigger, certaine propriété CSS ne pourra pas être exécuté. */
+    width: 100%;
+    zoom: 1;
+
+    /* Mathieu 2013-07-22 [B44998] On a peut-être plus besoin de la transparence, puisqu'on a mis une image blank à la place. */
+    /* Pour IE8 et 9 Doit être AVANT filter */
+    /*-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+
+    filter: alpha(opacity=1);*/
+
+    /* Older than Firefox 0.9 */
+    /*-moz-opacity:0.01;*/
+
+    /* Safari 1.x (pre WebKit!) */
+    /*-khtml-opacity: 0.01;*/
+
+    /* Modern!
+    /* Firefox 0.9+, Safari 2?, Chrome any?
+    /* Opera 9+, IE 9+ */
+    /*opacity: 0.01;*/
+}
+
+.ui-dialog {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1005;
+}
+
+.no-titlebar .ui-dialog-titlebar {
+    display: none;
+}
+
+/** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Pagination générique
+ ** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.Gen_TabPagination {
+    width: 75%;
+    text-align: center;
+    border-top: 1px solid lightgray;
+    height: 55px;
+}
+
+.Gen_TdPaginationItem {
+    vertical-align: middle;
+    padding: 0 2px;
+    width: 40px;
+    text-align: center;
+    margin: 0 10px 0 10px;
+    /*cursor: pointer;*/
+    font-family: Helvetica Bold, Arial, sans-serif;
+}
+
+.Gen_TDPaginationItemSuite,
+.Gen_TdPaginationItemInexistant {
+    vertical-align: middle;
+    padding: 0 2px;
+    width: 40px;
+    text-align: center;
+    margin: 0 10px 0 10px;
+    cursor: default;
+    font-family: Helvetica Bold, Arial, sans-serif;
+    border: 0;
+    height: 55px;
+}
+
+.Gen_TDPaginationItemSuite {
+    width: 20px;
+}
+
+.Gen_TdPaginationItemChoisi {
+    vertical-align: middle;
+    padding: 0 2px;
+    width: 40px;
+    text-align: center;
+    margin: 0 10px 0 10px;
+    font-family: Helvetica Bold, Arial, sans-serif;
+}
+
+.Gen_PaginationItem {
+    white-space: nowrap;
+    display: block;
+    color: #12c;
+    cursor: pointer;
+    font-size: 15px;
+    height: 39px;
+    line-height: 39px;
+    vertical-align: middle;
+    border: 1px solid #EEE;
+}
+
+.Gen_PaginationItemChoisi {
+    white-space: nowrap;
+    display: block;
+    /*color: #222; */
+    cursor: default;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid #3079ED;
+    background-color: #4D90FE;
+    color: #fff;
+    height: 39px;
+    line-height: 39px;
+    vertical-align: middle;
+}
+
+.Gen_TdPaginationItem:hover,
+.Gen_PaginationItem:hover {
+    text-decoration: underline;
+    color: #12c;
+}
+
+.Gen_PaginationItemChoisi:hover {
+    color: #222;
+}
+
+.Gen_PaginationFleche {
+    display: block;
+    color: #36c;
+    line-height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    width: 75px;
+    min-width: 75px;
+
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background-color: whiteSmoke;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(whiteSmoke), to(#F1F1F1));
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #36C;
+    height: 30px;
+    line-height: 30px;
+    padding: 4px 8px;
+
+    vertical-align: middle;
+    text-align: center;
+    border-color: #D9D9D9;
+    border-width: 1px;
+    font-family: Helvetica Bold, Arial, sans-serif;
+}
+
+.Gen_PaginationItem:active,
+.Gen_PaginationFleche:active {
+    color: #DB4E36;
+}
+
+.Gen_PaginationFlecheInactif {
+    display: none;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+/* Styles pour le date picker
+-----------------------------------------------------------*/
+
+.ui-datepicker-trigger {
+    position: relative;
+    top: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+    cursor: pointer;
+}
+
+input.needDatepicker {
+    width: 75px;
+}
+
+input.hasDatepicker {
+    width: 75px;
+}
+
+/* Styles pour les textarea en mode readonly
+-----------------------------------------------------------*/
+/* Annie: 2013-07-23 - [B45257] - Ne pas mettre TEXTAREA tel quel ici svp. ça pète tous les textarea partout. */
+div.Gen_divTextareaReadonly {
+    -moz-appearance: textfield-multiline;
+    -webkit-appearance: textarea;
+    border: 1px solid gray;
+    font: medium -moz-fixed;
+    font: -webkit-small-control;
+    height: 28px;
+    overflow: auto;
+    padding: 2px;
+    resize: both;
+    word-wrap: break-word;
+    -ms-word-wrap: break-word;
+}
+
+div.Gen_divTextareaReadonly:focus, div.Gen_divTextareaReadonly:hover {
+    box-shadow: none !important;
+    border: 1px solid gray !important;
+    outline-style: none !important;
+    outline-color: transparent !important;
+}
+
+/* Styles pour l'heure
+-----------------------------------------------------------*/
+
+input.heure {
+    width: 75px;
+}
+
+
+/* Utilisé dans Skytech.WebForm.disableContainer et Skytech.WebForm.disableControl
+-----------------------------------------------------------*/
+.textReadOnly {
+    background-color: #efefef;
+}
+
+.textGrayDisable {
+    color: gray
+}
+
+
+/* Liste d'erreurs custom en haut des formulaires ValidationSummary
+-----------------------------------------------------------*/
+div.validation-summary-errors {
+    background-color: #FFE3E7;
+    border-color: #FFC3C6;
+    border-style: solid;
+    border-width: 1px;
+    color: #941C4A;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+div.validation-summary-errors ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.validation-summary-green {
+    background-color: #A1FF91;
+    border-color: #268E30;
+    border-style: solid;
+    border-width: 1px;
+    color: #115B06;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+div.validation-summary-green ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+/* CSS commun pour les modules de RHPaie */
+.LoupeSearchTextBox {
+    cursor: pointer;
+    padding-right: 15px;
+    vertical-align: text-bottom;
+}
+
+.spanSearchTextBox input {
+    margin-right: 5px;
+}
+
+.k-grid td.GridSearchTextbox {
+    white-space: nowrap;
+    width: 300px;
+    max-width: 300px;
+    vertical-align: top;
+}
+
+.k-grid td.tdGridAvecSearchTextbox {
+    vertical-align: top;
+}
+
+
+.gridColonneAlignementDroite {
+    text-align: right;
+}
+
+/* Style unique pour le Popup de recherche d'employé RHPaie
+-----------------------------------------------------------*/
+
+
+#divPopupSelectionEmployeRHPaieForm .field-description {
+    color: #25517c;
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+
+#divPopupSelectionEmployeRHPaieForm #GridListeEmployesRHPaie {
+    width: 650px;
+    margin-bottom: 30px;
+}
+
+#divPopupSelectionEmployeRHPaieForm #GridListeEmployesRHPaie tbody tr td a:hover {
+    color: #fff;
+}
+
+#divPopupSelectionEmployeRHPaieForm #GridListeEmployesRHPaie tbody tr td.tdLienAction:hover a {
+    color: #fff;
+}
+
+#divPopupSelectionEmployeRHPaieForm .divActions {
+    position: absolute;
+    width: 170px;
+    display: none;
+    cursor: pointer;
+    border: 1px solid #D0D0D0;
+    padding: 7px;
+    background-color: #fff;
+}
+
+
+/* Popup de recherche RHPaie
+-----------------------------------------------------------*/
+.divPopupSelection {
+    padding-bottom: 20px;
+}
+
+.divPopupSelection #Recherche {
+    margin-left: 5px;
+    width: 200px;
+}
+
+.divPopupSelection #divRecherche {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.divPopupSelection .k-grid tbody td {
+    cursor: pointer;
+}
+
+.divPopupSelection .k-grid tbody tr:hover {
+    background-color: #3297fd;
+    color: #fff;
+}
+
+
+.divPopupSelection .k-grid tbody tr.trAucuneDonnees:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: auto;
+}
+

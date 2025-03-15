@@ -1,0 +1,121 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/Content/Partage/JavaScript/JQuery/jquery-current.js",
+      "PackagePath": "staticwebassets/Content/Partage/JavaScript/JQuery/jquery-current.js"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/Javascript/Lib_General.js",
+      "PackagePath": "staticwebassets/Javascript/Lib_General.js"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/images/FRA/General/ovx10_log2.jpg",
+      "PackagePath": "staticwebassets/images/FRA/General/ovx10_log2.jpg"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/images/General/blank1.gif",
+      "PackagePath": "staticwebassets/images/General/blank1.gif"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/images/General/intr_btnSubmit.gif",
+      "PackagePath": "staticwebassets/images/General/intr_btnSubmit.gif"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/images/General/intr_btnSubmit2.gif",
+      "PackagePath": "staticwebassets/images/General/intr_btnSubmit2.gif"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/images/General/intr_btnSubmit2_on.html",
+      "PackagePath": "staticwebassets/images/General/intr_btnSubmit2_on.html"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/images/General/intr_btnSubmit_on.html",
+      "PackagePath": "staticwebassets/images/General/intr_btnSubmit_on.html"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/images/General/keyboard.png",
+      "PackagePath": "staticwebassets/images/General/keyboard.png"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/images/General/keyboard_off.png",
+      "PackagePath": "staticwebassets/images/General/keyboard_off.png"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/intr/UI/Themes/Omnivox_Defaut/images/btnLogA.gif",
+      "PackagePath": "staticwebassets/intr/UI/Themes/Omnivox_Defaut/images/btnLogA.gif"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/intr/UI/Themes/Omnivox_Defaut/images/btnLogB.gif",
+      "PackagePath": "staticwebassets/intr/UI/Themes/Omnivox_Defaut/images/btnLogB.gif"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/intr/UI/Themes/Omnivox_Defaut/images/log1.jpg",
+      "PackagePath": "staticwebassets/intr/UI/Themes/Omnivox_Defaut/images/log1.jpg"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/intr/UI/Themes/Omnivox_Defaut/images/log3.jpg",
+      "PackagePath": "staticwebassets/intr/UI/Themes/Omnivox_Defaut/images/log3.jpg"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/intr/UI/Themes/Omnivox_Defaut/images/log5a.png",
+      "PackagePath": "staticwebassets/intr/UI/Themes/Omnivox_Defaut/images/log5a.png"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/intr/UI/Themes/Omnivox_Defaut/images/log5b.png",
+      "PackagePath": "staticwebassets/intr/UI/Themes/Omnivox_Defaut/images/log5b.png"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/intr/UI/Themes/Omnivox_Defaut/images/log5c.png",
+      "PackagePath": "staticwebassets/intr/UI/Themes/Omnivox_Defaut/images/log5c.png"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/intr/UI/Themes/Omnivox_Defaut/images/pp_ovx.jpg",
+      "PackagePath": "staticwebassets/intr/UI/Themes/Omnivox_Defaut/images/pp_ovx.jpg"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/stylesheets/content/global9b90.css",
+      "PackagePath": "staticwebassets/stylesheets/content/global9b90.css"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/stylesheets/images/General/BtnInstructions.png",
+      "PackagePath": "staticwebassets/stylesheets/images/General/BtnInstructions.png"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/stylesheets/images/General/separateur.gif",
+      "PackagePath": "staticwebassets/stylesheets/images/General/separateur.gif"
+    },
+    {
+      "Id": "/Users/samor140/CTFomni/wwwroot/stylesheets/ui/intraFlexa301.css",
+      "PackagePath": "staticwebassets/stylesheets/ui/intraFlexa301.css"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.CTFomni.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.CTFomni.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.CTFomni.props",
+      "PackagePath": "build\\CTFomni.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.CTFomni.props",
+      "PackagePath": "buildMultiTargeting\\CTFomni.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.CTFomni.props",
+      "PackagePath": "buildTransitive\\CTFomni.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

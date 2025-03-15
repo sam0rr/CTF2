@@ -1,0 +1,6 @@
+@CTFomni_HostAddress = http://localhost:5174
+
+GET {{CTFomni_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
