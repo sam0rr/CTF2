@@ -1,0 +1,18 @@
+@model CTFomni.Models.AutoSubmitFormModel
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection...</title>
+</head>
+<body onload="document.forms['autoForm'].submit();">
+<form id="autoForm" name="autoForm" method="POST" action="@Model.ActionUrl">
+    @foreach (var field in Model.FormData)
+    {
+        <input type="hidden" name="@field.Key" value="@field.Value" />
+    }
+</form>
+</body>
+</html>

