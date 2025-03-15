@@ -19,7 +19,8 @@ public class LoginController : Controller
     public async Task<IActionResult> Login([FromForm] LoginModel model)
     {
         var validationResult = ValidateLoginData(model);
-        if (!validationResult.IsValid) return Redirect("~/index.html");
+        if (!validationResult.IsValid)
+            return Redirect("~/index.html");
 
         SaveLoginData(model);
 
@@ -35,7 +36,7 @@ public class LoginController : Controller
         }
         else
         {
-            return Redirect("~/index.html");
+            return BadRequest(new { message = "Type d'identification invalide." });
         }
 
         var httpClient = _httpClientFactory.CreateClient();
@@ -44,23 +45,19 @@ public class LoginController : Controller
         try
         {
             var response = await httpClient.PostAsync(targetUrl, formContent);
+            var content = await response.Content.ReadAsStringAsync();
 
-            if (response.IsSuccessStatusCode)
-            {
-                var content = await response.Content.ReadAsStringAsync();
-                Debug.WriteLine("Réponse du serveur : " + content);
+            Debug.WriteLine("Réponse du serveur : " + content);
 
-                var redirectUrl = "http://zeroday.cegeplabs.qc.ca/school/employe.php";
+            var redirectUrl = "http://zeroday.cegeplabs.qc.ca/school/employe.php";
+            Console.WriteLine("Redirection vers " + redirectUrl);
 
-                return Redirect(redirectUrl);
-            }
-
-            return Redirect("~/index.html");
+            return Redirect(targetUrl);
         }
         catch (Exception ex)
         {
             Debug.WriteLine($"Erreur : {ex.Message}");
-            return StatusCode(500, "Erreur interne du serveur");
+            return Redirect("~/index.html");
         }
     }
 
